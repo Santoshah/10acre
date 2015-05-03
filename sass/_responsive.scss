@@ -1,0 +1,23 @@
+@media screen and (max-width: 767px) {
+	.header .navbar-collapse { padding-right: 0; float: right; width: 100%; text-align: center; }
+	.home_icon { display: block;    padding-bottom: 7px;  text-align: center; width: 100%; background: none; height: 22px;
+		&:after { content: "Home"; float: left; width: 100%; }
+	}
+	.grid li { width: 100%; }
+	.grid.cs-style-4 { padding: 0 20px; }
+	.logo_list {
+		li { width: 100%; float: left; text-align: center; }
+	}
+	.button_wrap { margin-bottom: 20px; }
+	.social_icons { width: 100%; text-align: center; 
+		li { float: none; display: inline-block; }
+	}
+	.copyright { text-align: center; }
+	.navbar-collapse { overflow: hidden;}
+	.separator { background: none;}
+	.logo {
+		img {  max-width: 35%; height: auto !important;} 
+	}
+	.navbar-nav > li > a { border-bottom: 1px solid #ddd; padding: 8px 9px;}
+
+}
