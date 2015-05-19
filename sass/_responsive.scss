@@ -1,4 +1,5 @@
 @media screen and (max-width: 767px) {
+	#menu-item-36 a {  background: none; width: 100%; height: auto; text-indent: 0; margin: 0; }
 	.header .navbar-collapse { padding-right: 0; float: right; width: 100%; text-align: center; }
 	.home_icon { display: block;    padding-bottom: 7px;  text-align: center; width: 100%; background: none; height: 22px;
 		&:after { content: "Home"; float: left; width: 100%; }
@@ -19,5 +20,45 @@
 		img {  max-width: 35%; height: auto !important;} 
 	}
 	.navbar-nav > li > a { border-bottom: 1px solid #ddd; padding: 8px 9px;}
+	.article, .sidebar { width: 100%; }
+	.sidebar { display: none !important; }
+	.sidebar.show { display: block !important; }
+    .innerpage .phone_num { padding-top: 0; }
+    .phone_num { padding: 0; font-size: 26px; }
+    .innerpage .slide_text { width: 100%; right: 0; }
+    .slide_button { margin-top: 0; }
+    .innerpage .slide_button {width: 100%; font-size: 16px; padding: 5px 10px; text-align: center; background: #730002; }
+    .header .col-md-9 { padding: 0;}
+	.navbar-nav { margin: 0;
+		.sub-menu .menu-item-has-children a i { position: relative; right: 10px; @include transform(90deg); }
+		 > li .sub-menu { position: static; width: 100%;  display: block;
+			.sub-menu { position: static; width: 100%;  display: block; }
+		 }
+	}
+.carousel-caption, .slide_text { width: 100%; left: 0;
+	p { display: none; }
+}
+.carousel-caption h4, .slide_title {  padding-top: 0; font-size: 22px;}
+.green-button, .brown-button, .red_button {  padding: 14px 20px; }
+.brown-button, .green-button {   width: 100%; }
+.payment .title_head { padding-bottom: 10px; }
+.home .wpcf7-form .form-group.col-sm-12 { width: 100%; }
+.slide_button {   padding: 10px 21px 10px; float: left;}
+.navbar-nav li { text-align: left; }
+.navbar-nav > li .sub-menu { display: none; }
+// .navbar-nav > li.menu-item-has-children:hover > .sub-menu { display: none; }
+.navbar-nav .sub-menu .menu-item-has-children a i { @include transform(rotate(90deg)); }
+.sub-menu .menu-item-has-children a i { top: 6px; }
+
+.menu-item-has-children {
+	a {
+		i { float: right; position: relative; top: 4px;  }
+	}
+}
+.unique-mobile-class {
+	i { display: none;  }
+}
+.navbar-nav > li:first-child a:hover { @include transform(scale(1));}
+.creambg .wpcf7-form .form-group.col-sm-12, .home .wpcf7-form .form-group.col-sm-12 { width: 100%; }
 
 }
